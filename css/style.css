@@ -133,7 +133,7 @@ body.template-dark {
 }
 
 .nav-list {
-    display: none;
+    /* display: none; */
     align-items: center;
     justify-content: center;
     gap: 3rem;
