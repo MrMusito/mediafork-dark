@@ -148,7 +148,7 @@ body.template-dark {
 @media screen and (max-width: 767px) {
     .nav-list {
         position: absolute;
-        display: flex;
+        display: none;
         flex-direction: column;
         background-color: #000000b0;
         left: 0;
