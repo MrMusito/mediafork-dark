@@ -152,14 +152,13 @@ body.template-dark {
         flex-direction: column;
         background-color: #000000b0;
         left: 0;
-        top: 0;
+        top: 6.1rem;
         width: 100%;
         padding-bottom: 100%;
         gap: 0;
         
     }
     .nav-link {
-        /* background-color: #f031c0; */
         border-bottom: 1px solid var(--transparent-white);
         width: 100%;
         text-align: center;
