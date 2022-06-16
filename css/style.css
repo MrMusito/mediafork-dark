@@ -138,12 +138,20 @@ body.template-dark {
     justify-content: center;
     gap: 3rem;
 }
+.nav-link {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: border var(--transition-duration) var(--transition-function);
+}
 @media screen and (max-width: 767px) {
     .nav-list {
         position: absolute;
         display: flex;
         flex-direction: column;
-        background-color: #d7ee5552;
+        
+        background-color: #000000b0;
         left: 0;
         top: 0;
         width: 100%;
@@ -152,17 +160,16 @@ body.template-dark {
         
     }
     .nav-link {
-        background-color: #f031c0;
+        /* background-color: #f031c0; */
+        border-bottom: 1px solid var(--transparent-white);
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item {
+        width: 100%;
     }
 }
 
-.nav-link {
-    display: inline-block;
-    position: relative;
-    color: #fff;
-    font-size: 1.5rem;
-    transition: border var(--transition-duration) var(--transition-function);
-}
 
 .nav-link::after {
     content: "";
