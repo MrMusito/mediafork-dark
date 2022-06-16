@@ -150,13 +150,12 @@ body.template-dark {
         position: absolute;
         display: flex;
         flex-direction: column;
-        
         background-color: #000000b0;
         left: 0;
         top: 0;
         width: 100%;
         padding-bottom: 100%;
-        
+        gap: 0;
         
     }
     .nav-link {
@@ -164,6 +163,8 @@ body.template-dark {
         border-bottom: 1px solid var(--transparent-white);
         width: 100%;
         text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
     .nav-item {
         width: 100%;
@@ -171,17 +172,7 @@ body.template-dark {
 }
 
 
-.nav-link::after {
-    content: "";
-    display: block;
-    height: .25rem;
-    width: 0;
-    position: absolute;
-    left: 0;
-    bottom: -.5rem;
-    background-color: var(--primary-color);
-    transition: width .3s ease;
-}
+
 
 .nav-link.active::after, .nav-link:hover::after  {
     width: 100%;
@@ -197,6 +188,17 @@ body.template-dark {
     }
     .nav-list {
         display: flex;
+    }
+    .nav-link::after {
+        content: "";
+        display: block;
+        height: .25rem;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -.5rem;
+        background-color: var(--primary-color);
+        transition: width .3s ease;
     }
 }
 
